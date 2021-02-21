@@ -1,0 +1,10 @@
+// produced with flexfringe from git commitc8fad5bd3b0c0dad0e28ec7606f20a7fcf975071
+// dfasat/flexfringe -h=kldistance -d=kl_data -m=2 -n=2 -x=0 -w=0 -a=0 -b=0 -f=0 -I=1 -t=1 -q=0 -y=0 -p=0.95 --output-dir=experiments/merge_safety_into_prduct/flexfringe_data/dfa /Users/kandai/Documents/projects/research/wombats_experiments/experiments/merge_safety_into_prduct/flexfringe_data/merge_safety_into_prduct_train 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="#1122"  ];
+		0 -> 0 [label="water_blue_open:88,empty_red_open:393"  ];
+		0 -> 67 [label="floor_green_open:80"  ];
+	67 [ label="#80"  ];
+}

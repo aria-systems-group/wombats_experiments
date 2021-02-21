@@ -1,0 +1,18 @@
+// produced with flexfringe from git commitc8fad5bd3b0c0dad0e28ec7606f20a7fcf975071
+// dfasat/flexfringe -S=wombats/config/DFA_merge_safety_to_seshia_paper.yaml -h=kldistance -d=kl_data -n=2 -x=0 -w=0 -b=1 -f=1 -I=0 -t=0 -l=0 -q=0 -y=0 -N=0 -T=1 -p=5 -C=0 --output-dir=experiments/safe_pdfa_learning_performance_analysis/flexfringe_data/dfa /Users/kandai/Documents/projects/research/wombats_experiments/experiments/safe_pdfa_learning_performance_analysis/flexfringe_data/train 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="State No.0, #101162"  ];
+		0 -> 0 [label="carpet_yellow_open:4814,empty_red_open:33617"  ];
+		0 -> 5 [label="floor_green_open:8000"  ];
+		0 -> 79 [label="water_blue_open:4150"  ];
+	5 [ label="State No.5, #8000"  ];
+	79 [ label="State No.79, #9976"  ];
+		79 -> 0 [label="carpet_yellow_open:624"  ];
+		79 -> 79 [label="water_blue_open:493"  ];
+		79 -> 80 [label="empty_red_open:3871"  ];
+	80 [ label="State No.80, #7742"  ];
+		80 -> 0 [label="carpet_yellow_open:462,empty_red_open:3064"  ];
+		80 -> 79 [label="water_blue_open:345"  ];
+}

@@ -1,18 +1,25 @@
-// produced with flexfringe from git commitd1cf04ada0831d0605a3651971ef9a02091d8823
-// dfasat/flexfringe -h=kldistance -d=kl_data -m=2 -n=2 -x=0 -w=0 -a=0 -b=0 -f=0 -I=1 -t=1 -q=0 -y=0 -p=0.4 --output-dir=experiments/simple_running_example/flexfringe_data/dfa /Users/nicholasrenninger/Google Drive/Grad School/specification learning/code/DPFA_DTS_product_experiment/dfasatInvestigations/experiments/simple_running_example/flexfringe_data/simple_running_example_train 
+// produced with flexfringe from git commitc8fad5bd3b0c0dad0e28ec7606f20a7fcf975071
+// dfasat/flexfringe -h=kldistance -d=kl_data -m=2 -n=2 -x=0 -w=0 -a=0 -b=0 -f=0 -I=1 -t=1 -q=0 -y=0 -p=0.4 --output-dir=experiments/simple_running_example/flexfringe_data/dfa /Users/kandai/Documents/projects/research/wombats_experiments/experiments/simple_running_example/flexfringe_data/simple_running_example_train 
 digraph DFA {
 	0 [label="root" shape=box];
 		I -> 0;
-	0 [ label="#86"  ];
-		0 -> 0 [label="empty_red_open:33"  ];
-		0 -> 37 [label="floor_purple_open:7"  ];
-		0 -> 46 [label="floor_green_open:3"  ];
-	37 [ label="#78"  ];
-		37 -> 37 [label="empty_red_open:32"  ];
-		37 -> 45 [label="floor_green_open:7"  ];
-	45 [ label="#7"  ];
-	46 [ label="#22"  ];
-		46 -> 46 [label="empty_red_open:8"  ];
-		46 -> 65 [label="floor_purple_open:3"  ];
-	65 [ label="#3"  ];
+	0 [ label="#20"  ];
+		0 -> 1 [label="empty_red_open:8"  ];
+		0 -> 39 [label="floor_purple_open:2"  ];
+	1 [ label="#28"  ];
+		1 -> 1 [label="floor_purple_open:4,floor_green_open:3"  ];
+		1 -> 11 [label="empty_red_open:6"  ];
+	11 [ label="#82"  ];
+		11 -> 10 [label="floor_green_open:3"  ];
+		11 -> 11 [label="empty_red_open:35"  ];
+		11 -> 39 [label="floor_purple_open:3"  ];
+	39 [ label="#23"  ];
+		39 -> 39 [label="empty_red_open:7"  ];
+		39 -> 43 [label="floor_green_open:4"  ];
+	43 [ label="#4"  ];
+	10 [ label="#4"  ];
+		10 -> 17 [label="empty_red_open:1"  ];
+	17 [ label="#2"  ];
+		17 -> 18 [label="floor_purple_open:1"  ];
+	18 [ label="#1"  ];
 }
