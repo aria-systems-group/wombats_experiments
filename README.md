@@ -10,7 +10,12 @@ This repo houses the example usage notebooks (`experiments`) as well as the core
 
 * clone this repo with:
  ```bash
-git clone --recurse-submodules https://github.com/nicholasRenninger/wombats_experiments .
+git clone --recurse-submodules https://github.com/aria-systems-group/wombats_experiments .
+ ```
+
+ * (For IROS2021 Only) check out `iros2021` branch
+ ```bash
+ git checkout iros2021
  ```
 
 * change into this repo's directory:
@@ -40,6 +45,10 @@ jupyter notebook
 
 * In the jupyter UI, navigate to the `experiments` directory. Each directory has a self-contained experiment which is housed in the `ipynb` (jupyter notebook) file. For example, to see a large example that exercises most of the library, open `experiments/seshia_paper_reproduction/seshia_paper_reproduction.ipynb`. After opening any notebook, click "Cell > Run all" and enjoy!
 
+* (for IROS2021) Open three different experiments
+  * 1. simple_running_example_rss
+  * 2. seshia_paper_reproduction_with_safety
+  * 3. safe_pdfa_learning_performance_analysis
 
 
 ## FlexFringe
