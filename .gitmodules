@@ -1,6 +1,6 @@
 [submodule "dfasat"]
 	path = dfasat
-	url = https://github.com/nicholasRenninger/dfasat.git
+	url = https://github.com/aria-systems-group/dfasat.git
 [submodule "lingeling"]
 	path = lingeling
 	url = https://github.com/nicholasRenninger/lingeling.git
