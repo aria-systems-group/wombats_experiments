@@ -13,11 +13,6 @@ This repo houses the example usage notebooks (`experiments`) as well as the core
 git clone --recurse-submodules https://github.com/aria-systems-group/wombats_experiments .
  ```
 
- * (For IROS2021 Only) check out `iros2021` branch
- ```bash
- git checkout iros2021
- ```
-
 * change into this repo's directory:
  ```bash
 cd wombats_experiments
