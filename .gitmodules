@@ -4,3 +4,6 @@
 [submodule "wombats"]
 	path = wombats
 	url = https://github.com/aria-systems-group/wombats.git
+[submodule "dfasat"]
+	path = dfasat
+	url = https://github.com/aria-systems-group/dfasat.git
