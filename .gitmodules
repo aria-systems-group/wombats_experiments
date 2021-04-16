@@ -6,4 +6,4 @@
 	url = https://github.com/nicholasRenninger/lingeling.git
 [submodule "wombats"]
 	path = wombats
-	url = https://github.com/nicholasRenninger/wombats.git
+	url = https://github.com/aria-systems-group/wombats.git
