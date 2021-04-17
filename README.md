@@ -12,7 +12,7 @@ conda activate wombats
 jupyter notebook
 ```
 
-## Installation on your local PC
+## Local Installation
 
 Please take a look at inside the Dockerfile for specific steps.
 
