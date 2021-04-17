@@ -2,15 +2,27 @@
 
 This repo houses the example usage notebooks (`experiments`) as well as the core `wombats` and `flexfringe` libraries powering the framework.
 
-## To run the experiments
+## Docker Installation
+Please use VSCode to build an image from `Dockerfile` and reopen VSCode in the remote container.
+Please follow the [official guide](https://code.visualstudio.com/docs/remote/containers).
+
+After opening VSCode in the container, run
+```bash
+conda activate wombats
+jupyter notebook
+```
+
+## Installation on your local PC
+
+Please take a look at inside the Dockerfile for specific steps.
 
 * install [`anaconda`](https://www.anaconda.com/products/individual)
 
-* install `flexfringe` dependencies for you OS, listed [here](https://bitbucket.org/chrshmmmr/dfasat/src/master/).
+* install `flexfringe` dependencies for your OS, listed [here](https://bitbucket.org/chrshmmmr/dfasat/src/master/). Again, please take a look at the Dockerfile.
 
 * clone this repo with:
  ```bash
-git clone --recurse-submodules https://github.com/aria-systems-group/wombats_experiments .
+git clone --recurse-submodules https://github.com/aria-systems-group/wombats_experiments
  ```
 
 * change into this repo's directory:
@@ -20,7 +32,7 @@ cd wombats_experiments
 
 * build the `flexfringe` tool:
  ```bash
-cd dfasat && make && cd ..
+cd dfasat && make gitversion.cpp && make && cd ..
  ```
 
 * create the `conda` environment for this library:
@@ -40,7 +52,8 @@ jupyter notebook
 
 * In the jupyter UI, navigate to the `experiments` directory. Each directory has a self-contained experiment which is housed in the `ipynb` (jupyter notebook) file. For example, to see a large example that exercises most of the library, open `experiments/seshia_paper_reproduction/seshia_paper_reproduction.ipynb`. After opening any notebook, click "Cell > Run all" and enjoy!
 
-* (for IROS2021) Open three different experiments
+## IROS 2021
+Open three different experiments
   * 1. simple_running_example_rss
   * 2. seshia_paper_reproduction_with_safety
   * 3. safe_pdfa_learning_performance_analysis
