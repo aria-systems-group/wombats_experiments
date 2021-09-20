@@ -15,9 +15,11 @@ ENV PATH $PATH:/root/anaconda3/bin
 
 # Somehow it fails when pulling dfasat/pypckage/src submodule
 # so I added "|| true" to ignore the error
-RUN git clone --recurse-submodules https://github.com/aria-systems-group/wombats_experiments || true
+RUN cd \
+    && git clone --recurse-submodules https://github.com/aria-systems-group/wombats_experiments || true
 
-RUN cd wombats_experiments/dfasat \
+RUN cd \
+    && cd wombats_experiments/dfasat \
     && make gitversion.cpp && make \
     && cd .. \
     && conda env create -f environment.yml \
