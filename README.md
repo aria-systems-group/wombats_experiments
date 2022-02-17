@@ -16,9 +16,9 @@ jupyter notebook
 
 Please take a look at inside the Dockerfile for specific steps.
 
-* install [`anaconda`](https://www.anaconda.com/products/individual)
+* install [`anaconda`](https://www.anaconda.com/products/individual) (if you want to work with conda)
 
-* install `flexfringe` dependencies for your OS, listed [here](https://bitbucket.org/chrshmmmr/dfasat/src/master/). Again, please take a look at the Dockerfile.
+* install `flexfringe` dependencies for your OS, listed [here](https://bitbucket.org/chrshmmmr/dfasat/src/master/). Please take a look at the Dockerfile.
 
 * clone this repo with:
  ```bash
@@ -35,6 +35,7 @@ cd wombats_experiments
 cd dfasat && make gitversion.cpp && make && cd ..
  ```
 
+### Install python packages with Conda
 * create the `conda` environment for this library:
 ```bash
 conda env create -f environment.yml
@@ -45,6 +46,16 @@ conda env create -f environment.yml
 conda activate wombats
  ```
 
+### Install python packages with venv+pip
+
+* create virtual environment with ven and pip install packages:
+ ```bash
+python3 -m venv env
+source env/bin/activate
+pip install .
+ ```
+
+## Examples
 * Launch a jupyter server:
  ```bash
 jupyter notebook
