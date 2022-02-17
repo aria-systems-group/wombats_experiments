@@ -1,0 +1,14 @@
+bidict
+graphviz
+gym
+gym_minigrid
+IPython
+matplotlib
+networkx
+numpy
+pandas
+pyyaml
+pydot
+pygraphviz
+sklearn
+tqdm
