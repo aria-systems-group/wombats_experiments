@@ -27,7 +27,7 @@ class CustomInstall(install):
     so I had to use CustomInstall.
     """
     def run(self):
-        call(['pip', 'install', 'pygraphviz', '--global-option="-I/usr/local/include"', '--global-option="-L/usr/local/lib"'])
+        call(['pip', 'install', '--global-option=build_ext', '--global-option="-I/usr/local/include"', '--global-option="-L/usr/local/lib"', 'pygraphviz'])
         install.run(self)
 
 
