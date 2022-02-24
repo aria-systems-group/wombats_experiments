@@ -22,7 +22,7 @@ with pathlib.Path('requirements.txt').open() as requirements_txt:
 # linux
 if platform == "linux" or platform == "linux2":
     pass
-    install_requires.append('pygrpahviz')
+    install_requires.append('pygraphviz')
     cmdclass = {}
 # OS X
 elif platform == "darwin":
