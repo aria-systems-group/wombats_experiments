@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 RUN apt update
 
 # Install Tools and C++ Libraries
-RUN apt install -y wget git libyaml-cpp-dev libgsl0-dev libpopt-dev  build-essential
+RUN apt install -y wget git libyaml-cpp-dev libgsl0-dev libpopt-dev  build-essential graphviz
 
 # Install Anaconda
 RUN wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh \
